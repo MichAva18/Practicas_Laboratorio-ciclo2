@@ -1,2 +1,12 @@
-import readline from "node:readline";
+// 1-Transformación de texto: Solicite al usuario su nombre. Muestre el nombre en mayúsculas y en minúsculas.
 
+let nombre = 'Carlos';
+
+let nombreMin = nombre.toLowerCase()
+let nombreMayu = nombre.toLocaleUpperCase()
+
+ console.log("Su nombre es minusculas es: " +nombreMin);
+ console.log("Su nombre es mayusculas es: " +nombreMayu);
+
+
+ 
