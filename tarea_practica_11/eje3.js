@@ -9,7 +9,7 @@
 //     Muestre el nuevo arreglo filtrado en consola.
 
 
-// Creamos un arreglo de objetos con nombre y precio
+// Creamos un catálogo de productos con su nombre y precio
 const catalogoProductos = [
     { nombre: "Laptop", precio: 800 },
     { nombre: "Mouse", precio: 25 },
@@ -19,7 +19,7 @@ const catalogoProductos = [
     { nombre: "Tablet", precio: 250 }
 ];
 
-// Utilizamos forEach para recorrer y mostrar cada producto
+// Recorremos cada producto con forEach para mostrar su nombre y precio
 console.log("TAREA 3: LISTA DE PRODUCTOS");
 
 catalogoProductos.forEach((producto) => {
@@ -27,11 +27,11 @@ catalogoProductos.forEach((producto) => {
                 "- Precio: $" + producto.precio);
 });
 
-// Utilizamos filter para obtener productos que cuesten más de $100
+// Filtramos los productos cuyo precio supera los $100
 const productosConPrecioSuperior = catalogoProductos.filter((producto) => {
     return producto.precio > 100;
 });
 
-// Mostramos el nuevo arreglo con los productos filtrados
+// Mostramos el listado final con los productos filtrados
 console.log("\nPRODUCTOS CON PRECIO MAYOR A $100:");
 console.log(productosConPrecioSuperior);

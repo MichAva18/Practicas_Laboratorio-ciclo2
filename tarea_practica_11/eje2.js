@@ -6,18 +6,17 @@
 
 // TAREA 2: Fábrica de funciones
 
-// Creamos una función de orden superior
-// Recibe un factor y devuelve otra función
+// Creamos una función de orden superior que recibe un factor y devuelve otra función
 const crearMultiplicador = (factor) => {
 
-    // Esta función utiliza el factor recibido
+    // Esta nueva función aplica el factor recibido al valor base
     return (valorBase) => valorBase * factor;
 };
 
-// Creamos una función que duplica cualquier número
+// Generamos una función para duplicar cualquier número
 const duplicador = crearMultiplicador(2);
 
-// Creamos una función que triplica cualquier número
+// Generamos una función para triplicar cualquier número
 const triplicador = crearMultiplicador(3);
 
 // Probamos ambas funciones con el número 5
